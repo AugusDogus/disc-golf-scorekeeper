@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "Disc Golf Scorekeeper",
+  "short_name": "Disc Golf Scorekeeper",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
