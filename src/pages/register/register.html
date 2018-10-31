@@ -1,0 +1,43 @@
+<ion-content padding class="content no-scroll">
+  <div class="container">
+    <div class="box">
+      <img class="logo" src="assets/imgs/logo.png">
+    </div>
+    <div class="box">
+      <ion-card>
+        <ion-card-header>
+          Register
+        </ion-card-header>
+        <ion-card-content>
+
+          <ion-item>
+            <ion-label color="primary" stacked>Name</ion-label>
+            <ion-input type="text" [(ngModel)]="user.name" (keyup.enter)="Login()"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="primary" stacked>Email</ion-label>
+            <ion-input type="text" [(ngModel)]="user.email" (keyup.enter)="Login()"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label color="primary" stacked>Password</ion-label>
+            <ion-input type="password" [(ngModel)]="user.password" (keyup.enter)="Login()"></ion-input>
+          </ion-item>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col text-center>
+                <button ion-button color="light" (click)="Cancel()">Cancel</button>
+              </ion-col>
+              <ion-col text-center>
+                <button ion-button color="primary" (click)="Register()">Register</button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>
