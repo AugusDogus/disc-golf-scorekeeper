@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-import { Socket } from 'ng-socket-io';
 
 @Component({
   selector: 'page-home',
@@ -8,21 +6,9 @@ import { Socket } from 'ng-socket-io';
 })
 export class HomePage {
 
-  public name: string = '';
+  public name: string = 'John Smith';
 
-  constructor(
-    public navCtrl: NavController,
-    private socket: Socket,
-    public navParams: NavParams
-  ) {
-    socket.on('setName', (message) => {
-      alert(message);
-    });
-    this.name = this.navParams.get('name');
-  }
+  constructor() {}
 
-  joinRoom(room){
-    this.socket.emit('joinRoom', room);
-  }
 
 }
